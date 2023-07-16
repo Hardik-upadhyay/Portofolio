@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4ca5efc76.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo" alt="img not found">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#projects">Projects</a></li>  
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hey, I'm<span> Hardik</span><br>Upadhyay from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/image1.png" alt="not found">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a passionate student, I am driven by my insatiable curiosity and deep fascination for the fields of AI, ML, data science, and development. With a particular focus on languages like C++, I am constantly exploring and honing my skills to stay at the forefront of technological advancements. My goal is to contribute to the ever-evolving world of technology and make a positive impact through innovative solutions and creative problem-solving.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end development</span><br>Designing static web interfaces</li>
+                            <li style="margin-top: 10px;"><span>C++</span><br>Compititive programming</li>
+                            <li style="margin-top: 10px;"><span>Artificial Intelligence</span><br>Informed & uninformed search techniques</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>BE in information technology(Sem-5)<br>SPI:9.52</li>
+                            <li style="margin-top: 10px;"><span>2018-2020</span><br>HSC in Science <br>Percentage:72%</li>
+                            <li style="margin-top: 10px;"><span>2018</span><br>SSC from GSEB <br>Percentage:70%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Training & Internship</span><br>2-month front-end internship, acquiring expertise in HTML, CSS, and JavaScript for web development.</li>
+                            <li style="margin-top: 10px;"><span>Campus ambassador</span><br>3 months, successfully driving engagement and generating more than 15 referrals through effective promotion and relationship-building.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blogs -->
+    <div id="blogs">
+        <div class="container">
+            <h1 class="sub-title">Upcoming Blogs</h1>
+            <div class="blogs-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Artificial Intelligence</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vitae aut perferendis quo voluptatibus, unde optio accusantium odio perspiciatis voluptate.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>ETL process</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vitae aut perferendis quo voluptatibus, unde optio accusantium odio perspiciatis voluptate.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Best Programming Language</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vitae aut perferendis quo voluptatibus, unde optio accusantium odio perspiciatis voluptate.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/Project_1.png" alt="fufigi">
+                    <div class="layer">
+                        <h3>social media</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos nam pariatur dicta fugiat ipsam et molestias minus praesentium culpa?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Project_2.png" alt="fufigi">
+                    <div class="layer">
+                        <h3>social media2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos nam pariatur dicta fugiat ipsam et molestias minus praesentium culpa?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Project_3.png" alt="fufigi">
+                    <div class="layer">
+                        <h3>social media3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos nam pariatur dicta fugiat ipsam et molestias minus praesentium culpa?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i><a href="hupadhyay623@gmail.com" style="text-decoration: none; color: white; ">hupadhyay623@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i>9725856212</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/_hardik_u?igshid=OTk0YzhjMDVlZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hardik-upadhyay-28365322b"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.hackerrank.com/profile/hupadhyay623"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://github.com/Hardik-upadhyay"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="image/resumeeee.pdf" class="btn btn2" download>Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your mail addfress" required>
+                        <textarea name="Message" id="" rows= "6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 | Made by Hardik Upadhyay</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            } 
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            } 
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxd_K5azDV-3kUYTad9qCoj7_dvrdOQTIVkO4zchvWBd0CXUjf7IMxYP9VLdt9CsfBs/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },4000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
